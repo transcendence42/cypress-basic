@@ -1,4 +1,6 @@
 - [x] typescript 로 cypress 돌리기
   - [x] https://basarat.gitbook.io/typescript/intro-1/cypress
-- [ ] cypress-basic에 typescript 환경설정 하기
+- [x] cypress-basic에 typescript 환경설정 하기
+ - [ ] cypress-basic js에서 ts로 이주하기
+- [ ] prettier, eslint typescript 버전으로 추가
 - [ ] cypress 문법익히기
