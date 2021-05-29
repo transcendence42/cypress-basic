@@ -1,7 +1,11 @@
-export default function Counter( {$app}: {$app: HTMLDivElement | null} ):void {
+export default function Counter({
+  $app
+}: {
+  $app: HTMLDivElement | null;
+}): void {
   const render = () => {
     if (!$app) {
-      return ;
+      return;
     }
     $app.innerHTML = `
        <div class="container">
