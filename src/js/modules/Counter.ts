@@ -3,7 +3,7 @@ export default function Counter({
 }: {
   $app: HTMLDivElement | null;
 }): void {
-  const render = () => {
+  const render = (): void => {
     if (!$app) {
       return;
     }
@@ -27,12 +27,12 @@ export default function Counter({
     }
   }
 
-  const controller = () => {
+  const controller = (): void => {
     document.getElementsByClassName('minus-button')[0].addEventListener('click', ()=>{counterEvent('-')})
     document.getElementsByClassName('plus-button')[0].addEventListener('click', ()=>{counterEvent('+')})
   }
 
-  const init = () => {
+  const init = (): void => {
     render();
     controller();
   };
