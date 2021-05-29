@@ -6,12 +6,18 @@
   "author": "im1 <im1@woowahan.com>",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
     "cypress": "^7.4.0",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
     "typescript": "^4.3.2"
   },
   "scripts": {
     "cypress:open": "./node_modules/.bin/cypress open",
     "cypress:run": "./node_modules/.bin/cypress run",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "lint": "eslint ."
   }
 }
