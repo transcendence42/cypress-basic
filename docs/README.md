@@ -2,6 +2,7 @@
   - [x] https://basarat.gitbook.io/typescript/intro-1/cypress
 - [x] cypress-basic에 typescript 환경설정 하기
  - [x] cypress-basic js에서 ts로 이주하기
- - [ ] 크롬에 돌아가는 알맞은 es 문법 버전으로 맞추기
+   - [x] Typescript ReferenceError: exports is not defined 문제 해결하기
+     - "module": "commonjs" 옵션이 설정돼서 exports 문법으로 반환해서 생긴 문제 "target": "es6"으로 바꿔주자.
 - [x] prettier, eslint typescript 버전으로 추가
 - [ ] cypress 문법익히기
