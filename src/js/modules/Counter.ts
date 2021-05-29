@@ -1,5 +1,8 @@
-export default function Counter({ $app }) {
+export default function Counter( {$app}: {$app: HTMLDivElement | null} ):void {
   const render = () => {
+    if (!$app) {
+      return ;
+    }
     $app.innerHTML = `
        <div class="container">
           <h1>ui counter</h1>
