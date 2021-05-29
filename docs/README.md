@@ -1,3 +1,4 @@
-- [ ] typescript 로 cypress 돌리기
-  - [ ] https://basarat.gitbook.io/typescript/intro-1/cypress
+- [x] typescript 로 cypress 돌리기
+  - [x] https://basarat.gitbook.io/typescript/intro-1/cypress
 - [ ] cypress-basic에 typescript 환경설정 하기
+- [ ] cypress 문법익히기
