@@ -1,12 +1,9 @@
-export default function Counter({
-  $app
-}: {
-  $app: HTMLDivElement | null;
-}): void {
+export default function Counter({ $app }: { $app: HTMLDivElement | null }): void {
   const render = (): void => {
     if (!$app) {
       return;
     }
+    // eslint-disable-next-line no-param-reassign
     $app.innerHTML = `
        <div class="container">
           <h1>ui counter</h1>
@@ -18,19 +15,23 @@ export default function Counter({
         </div>`;
   };
 
-  const counterEvent = (operator:string): void => {
-    const countElement: HTMLInputElement = document.querySelector<HTMLInputElement>(".count-display")!;
+  const counterEvent = (operator: string): void => {
+    const countElement: HTMLInputElement = document.querySelector<HTMLInputElement>('.count-display')!;
     if (operator === '+' && Number(countElement.value) < 12) {
       countElement.value = String(Number(countElement.value) + 1);
     } else if (operator === '-' && Number(countElement.value) > 8) {
       countElement.value = String(Number(countElement.value) - 1);
     }
-  }
+  };
 
   const controller = (): void => {
-    document.getElementsByClassName('minus-button')[0].addEventListener('click', ()=>{counterEvent('-')})
-    document.getElementsByClassName('plus-button')[0].addEventListener('click', ()=>{counterEvent('+')})
-  }
+    document.getElementsByClassName('minus-button')[0].addEventListener('click', () => {
+      counterEvent('-');
+    });
+    document.getElementsByClassName('plus-button')[0].addEventListener('click', () => {
+      counterEvent('+');
+    });
+  };
 
   const init = (): void => {
     render();
