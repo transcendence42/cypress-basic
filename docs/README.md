@@ -25,7 +25,7 @@
 
 - [x] cypress 문법익히기
 - [x] counter test case 만들기
- - [x] minus button
- - [x] min value 8
- - [x] plus button
- - [x] plus value 12
+  - [x] minus button
+  - [x] min value 8
+  - [x] plus button
+  - [x] plus value 12
