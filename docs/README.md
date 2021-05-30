@@ -28,4 +28,4 @@
   - [x] minus button
   - [x] min value 8
   - [x] plus button
-  - [x] plus value 12
+  - [x] max value 12
